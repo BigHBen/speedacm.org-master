@@ -1,0 +1,67 @@
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default " role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Speed ACM</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li {{ if eq .Site.Title .Title }} class="active" {{end}}><a href="/">Home</a></li>
+            <li class="dropdown{{ if or (eq .Title "Abouts") (eq .Section "about") }} active{{end}}">
+            	<a href="#">About <b class="caret"></b></a>
+            	<ul class="dropdown-menu">
+        	    	<li><a href="/about/whoweare">Who We Are</a></li>
+        	    	<li><a href="/about/officers">Officers</a></li>
+        	    	<li><a href="https://drive.google.com/folderview?id=0B4ybQLDSBpx7elhsT3BRM1kwM1U&usp=drive_web" target="_blank">All Documents</a></li>
+        	    	<li class="divider"></li>
+        	    	<li><a href="/about/constitution">Constitution</a></li>
+			<li><a href="http://www.acm.org/about/code-of-ethics" target="_blank">Code of Ethics</a></li>
+        	    	<li><a href="/about/sigs">Student Interest Groups</a></li>
+        	    	<li><a href="/about/tempcommittees">Temporary Committees</a></li>
+        	    	<li><a href="/about/gbmminutes">General Business Meeting Minutes</a></li>
+        	    	<li><a href="/about/ecminutes">Executive Council Meeting Minutes</a></li>
+		</ul>
+            </li>
+            <li class="dropdown{{ if or (eq .Title "Calendars") (eq .Section "calendars") }} active{{end}}">
+            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Calendars <b class="caret"></b></a>
+            	<ul class="dropdown-menu">
+        	    	<li><a href="/calendars/speedacm">All Calendars</a></li>
+        	    	<li class="divider"></li>
+        	    	<li><a href="/calendars/slug">SLUG</a></li>
+			<li><a href="/calendars/ccdc">Cyber Defense</a></li>
+			<li><a href="/calendars/gamedev">Game Development</a></li>
+			<li><a href="/calendars/hacking">Hacking</a></li>
+		</ul>
+            </li>
+            <li class="dropdown{{ if or (eq .Title "sigs") (eq .Section "sigs") }} active{{end}}">
+            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">SIGS <b class="caret"></b></a>
+            	<ul class="dropdown-menu">
+        	    	<li><a href="/sigs/overview">Our SIGS</a></li>
+        	    	<li class="divider"></li>
+        	    	<li><a href="/sigs/slug">SLUG</a></li>
+			<li><a href="/sigs/cyberdefense">Cyber Defense</a></li>
+			<li><a href="/sigs/gamedev">Game Development</a></li>
+			<li><a href="/sigs/hacking">Hacking</a></li>
+		</ul>
+            </li>
+          </ul>
+		  <div class="navbar-right">
+		  <ul class="nav navbar-nav">
+			<li><a href="https://louisville.campuslabs.com/engage/organization/speed-association-for-computing-machinery">EngageUofL</a></li>
+		  </ul>
+		  <ul class="nav navbar-nav">
+			<li><a href="http://discord.speedacm.org/">Discord</a></li>
+		  </ul>
+          <ul class="nav navbar-nav">
+		    <li class="{{ if or (eq .Title "Contact") (eq .Section "contact") }}active{{end}}"><a href="/contact/form">Contact</a></li>
+          </ul>
+		  </div>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
