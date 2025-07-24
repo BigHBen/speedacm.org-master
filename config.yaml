@@ -1,4 +1,4 @@
-baseurl: ""
+baseurl: "/"
 title: "Speed ACM"
 indexes:
   tag: "tags"
@@ -6,3 +6,5 @@ indexes:
 params:
   author: "Speed ACM"
   year: "2014"
+relativeURLs: true
+canonifyURLs: true
